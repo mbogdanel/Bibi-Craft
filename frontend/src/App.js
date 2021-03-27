@@ -5,10 +5,12 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
+import InProgress from './components/InProgress'
 
 const App = () => {
   return (
     <Router>
+      <InProgress />
       <Header />
       <main className='py-3'>
         <Container>
@@ -17,6 +19,7 @@ const App = () => {
         </Container>
       </main>
       <Footer />
+
     </Router>
   )
 }
