@@ -11,18 +11,7 @@ const products = [
     rating: 4.5,
     numReviews: 12,
   },
-  {
-    name: 'Linen Poncho, Handmade',
-    image: '/images/poncho2.jpg',
-    description:
-      'Quickly thrown over and already dressed! Handmade. This linen embroidery poncho is a perfect accent for any outfit and any occasion as poncho, cape, beach dress, pareo, scarf, headgear, beach tunic, vest, skirt, mouth covering, baby blanket or puck cloth. Materials: pure linen, Created for you',
-    brand: 'BibiCraft',
-    category: 'Clothes',
-    price: 79.75,
-    countInStock: 7,
-    rating: 5.0,
-    numReviews: 8,
-  },
+
   {
     name: 'Sock Stuffed Fella',
     image: '/images/doll1.jpg',
@@ -35,17 +24,31 @@ const products = [
     rating: 3,
     numReviews: 12,
   },
+
   {
-    name: 'Sock Stuffed Fella',
-    image: '/images/doll2.jpg',
+    name: 'Hand-Crafted Necklace',
+    image: '/images/necklace.jpg',
     description:
-      'This is unique stuffed doll made from socks. This adorable little one brings you warm feeling, good mood and smile, send you back to a childhood. Delicate and gentle this doll can be beautiful home decoration, perfect gift for baby shower, wonderful present for your loved ones. This doll made from new nylon blend socks and filled with high quality polyester toy filling. Its about 5" tall. This is NOT APPROPRIATE for babies or small children since the decorations pose a choking hazard. Made with all my love and care.',
+      'Materials: handspun ROPE, nautical grade, Tula Blue, ROPE collection, waterproof kidproof lifeproof, rock it your way, bracelet anklet, necklace hair jewelry, versatile, rondelle petite, pyrite',
     brand: 'BibiCraft',
-    category: 'Toys',
+    category: 'necklace',
     price: 29.99,
-    countInStock: 11,
-    rating: 5,
+    countInStock: 7,
+    rating: 3,
     numReviews: 12,
+  },
+
+  {
+    name: 'Linen Poncho, Handmade',
+    image: '/images/poncho2.jpg',
+    description:
+      'Quickly thrown over and already dressed! Handmade. This linen embroidery poncho is a perfect accent for any outfit and any occasion as poncho, cape, beach dress, pareo, scarf, headgear, beach tunic, vest, skirt, mouth covering, baby blanket or puck cloth. Materials: pure linen, Created for you',
+    brand: 'BibiCraft',
+    category: 'Clothes',
+    price: 79.75,
+    countInStock: 7,
+    rating: 5.0,
+    numReviews: 8,
   },
   {
     name: 'Tray Hand-Carved Limestone Sculpture',
@@ -69,6 +72,54 @@ const products = [
     price: 89.1,
     countInStock: 0,
     rating: 4,
+    numReviews: 12,
+  },
+  {
+    name: 'Sock Stuffed Fella',
+    image: '/images/doll3.jpg',
+    description:
+      'This is unique stuffed doll made from socks. This adorable little one brings you warm feeling, good mood and smile, send you back to a childhood. Delicate and gentle this doll can be beautiful home decoration, perfect gift for baby shower, wonderful present for your loved ones. This doll made from new nylon blend socks and filled with high quality polyester toy filling. Its about 5" tall. This is NOT APPROPRIATE for babies or small children since the decorations pose a choking hazard. Made with all my love and care.',
+    brand: 'BibiCraft',
+    category: 'Toys',
+    price: 29.99,
+    countInStock: 11,
+    rating: 5,
+    numReviews: 12,
+  },
+  {
+    name: 'Hand-Carved Limestone Sculpture',
+    image: '/images/sculpture.jpg',
+    description:
+      'Handmade. Materials: limestone, white stone, hand carved stone, sculpture materia, Height: 3 inches Width: 3 inches Depth: 5.5 inches',
+    brand: 'BibiCraft',
+    category: 'Sculptures',
+    price: 89.1,
+    countInStock: 0,
+    rating: 4,
+    numReviews: 12,
+  },
+  {
+    name: 'Linen Poncho, Handmade',
+    image: '/images/poncho3.jpg',
+    description:
+      'Quickly thrown over and already dressed! Handmade. This linen embroidery poncho is a perfect accent for any outfit and any occasion as poncho, cape, beach dress, pareo, scarf, headgear, beach tunic, vest, skirt, mouth covering, baby blanket or puck cloth. Materials: pure linen, Created for you',
+    brand: 'BibiCraft',
+    category: 'Clothes',
+    price: 79.75,
+    countInStock: 7,
+    rating: 5.0,
+    numReviews: 8,
+  },
+  {
+    name: 'Sock Stuffed Fella',
+    image: '/images/doll2.jpg',
+    description:
+      'This is unique stuffed doll made from socks. This adorable little one brings you warm feeling, good mood and smile, send you back to a childhood. Delicate and gentle this doll can be beautiful home decoration, perfect gift for baby shower, wonderful present for your loved ones. This doll made from new nylon blend socks and filled with high quality polyester toy filling. Its about 5" tall. This is NOT APPROPRIATE for babies or small children since the decorations pose a choking hazard. Made with all my love and care.',
+    brand: 'BibiCraft',
+    category: 'Toys',
+    price: 29.99,
+    countInStock: 11,
+    rating: 5,
     numReviews: 12,
   },
 ]
