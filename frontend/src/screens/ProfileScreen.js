@@ -4,10 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
-import {
-  USER_UPDATE_PROFILE_REQUEST,
-  USER_UPDATE_PROFILE_RESET,
-} from '../constants/userConstants'
+import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants'
 
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState('')
@@ -15,6 +12,7 @@ const ProfileScreen = ({ location, history }) => {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [message, setMessage] = useState(null)
+  const [successUpdate, setSuccessUpdate] = useState(false) //for showing the succes profile uodated message
 
   const dispatch = useDispatch()
 
@@ -31,7 +29,8 @@ const ProfileScreen = ({ location, history }) => {
     if (!userInfo) {
       history.push('/login')
     } else {
-      if (!user || !user.name || success) {
+      if (!user.name || success) {
+        setSuccessUpdate(true)
         dispatch({ type: USER_UPDATE_PROFILE_RESET })
         dispatch(getUserDetails('profile'))
       } else {
@@ -45,7 +44,9 @@ const ProfileScreen = ({ location, history }) => {
     e.preventDefault()
     if (password !== confirmPassword) {
       setMessage('Passwords do not match')
+      setSuccessUpdate(false)
     } else {
+      setMessage(null)
       dispatch(updateUserProfile({ id: user._id, name, email, password }))
     }
   }
@@ -56,7 +57,7 @@ const ProfileScreen = ({ location, history }) => {
         <h2>User Profile</h2>
         {message && <Message variant='danger'>{message}</Message>}
         {error && <Message variant='danger'>{error}</Message>}
-        {success && <Message variant='success'>Profile Updated</Message>}
+        {successUpdate && <Message variant='success'>Profile Updated</Message>}
         {loading && <Loader />}
         <Form onSubmit={submitHandler}>
           <Form.Group controlId='name'>
@@ -80,7 +81,7 @@ const ProfileScreen = ({ location, history }) => {
           </Form.Group>
 
           <Form.Group controlId='password'>
-            <Form.Label>Password Address</Form.Label>
+            <Form.Label>Password</Form.Label>
             <Form.Control
               type='password'
               placeholder='Enter password'
