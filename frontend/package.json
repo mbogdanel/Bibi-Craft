@@ -48,5 +48,8 @@
       "not dead",
       "not op_mini all"
     ]
+  },
+  "overrides": {
+    "semver": "^7.5.3"
   }
 }
